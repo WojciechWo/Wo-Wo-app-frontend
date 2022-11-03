@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form>
+  <label for="fname">login:</label><br>
+  <input type="text" id="fname" name="fname" [(ngModel)]="name"><br><br>
+  <label for="lname">password:</label><br>
+  <input type="text" id="lname" name="lname" [(ngModel)]="password"><br><br>
+  <button (click)="login()" >login</button>
+</form> 
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+  <th scope="col">X</th>
+  <th scope="col">Y</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let element of data; index as i">
+  <th scope="row">{{"element.x"}}</th>
+  <td>{{"element.y"}}</td>
+  </tr>
+</tbody>
+  </table>
+</body>
+</html>
